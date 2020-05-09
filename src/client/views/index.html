@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Natural Language Processing (NLP)</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                ane'<span>x</span>
+            </div>
+            <div class="">
+                <ul>
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="url" name="input" value="" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+                <p class="container-response">Response Message: <span id="response-msg"></span></p>
+            <section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results">
+                    <ul id="list-data" class="hide">
+                        <li>
+                            <strong>polarity :</strong>
+                            <p id="polarity"></p>
+                        </li>
+                        <li>
+                            <strong>subjectivity :</strong>
+                            <p id="subjectivity"></p>
+                        </li>
+                        <li>
+                            <strong>text :</strong>
+                            <p id="text"></p>
+                        </li>
+                        <li>
+                            <strong>polarity confidence :</strong>
+                            <p id="polarity_confidence"></p>
+                        </li>
+                        <li>
+                            <strong>subjectivity confidence: </strong>
+                            <p id="subjectivity_confidence"></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="love">Made with ♥️ in Italy 🇮🇹 </p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

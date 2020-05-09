@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: $main-background;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        span {
+            color: $hover-color;
+            margin: 0 2px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+
+        a {
+            padding: 0 16px;
+            line-height: 72px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.hide {
+    display: none;
+}
+
+#list-data {
+    li {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    strong {
+        min-width: 170px;
+        display: inline-block;
+    }
+
+    p {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+.error {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+.container-response {
+    text-align: center;
+    margin-bottom: 10px;
+}
